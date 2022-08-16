@@ -1,0 +1,12 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+nav.yatay-menu a{
+    text-decoration: none;
+}
+nav.yatay-menu ul {
+    list-style-type: none;
+}
+nav.yatay-menu ul li{
+    display: inline-block;
+}
