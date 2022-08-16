@@ -6,7 +6,13 @@ nav.yatay-menu a{
 }
 nav.yatay-menu ul {
     list-style-type: none;
+    text-align: center;
 }
 nav.yatay-menu ul li{
     display: inline-block;
+    background-color: wheat;
+    padding: 1rem 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    width: 5rem;
 }
