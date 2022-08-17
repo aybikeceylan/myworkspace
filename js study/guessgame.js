@@ -15,22 +15,22 @@
 //*   değilse
 //*       print(üzgünüz)
 
-let hak = 5;
-const rastgele = Math.round(Math.random() * 100)
-console.log(rastgele)
-let tahmin;
-do {
-    tahmin = +prompt("lütfen bir tahmin yapınız:")
-    hak -= 1
-    if (tahmin === rastgele) {
-        console.log(`tebrikler ${5 - hak} kerede bildiniz`);
-        break;
-    } else if (tahmin < rastgele) {
-        console.log("ARTTIR ⬆")
-    } else {
-        console.log("AZALT ⬇");
-    }
-} while (hak > 0)
-if (tahmin !== rastgele) {
-    console.log("üzgünüz oyunu kaybettiniz 😔😔")
-}
+// let hak = 5;
+// const rastgele = Math.round(Math.random() * 100)
+// console.log(rastgele)
+// let tahmin;
+// do {
+//     tahmin = +prompt("lütfen bir tahmin yapınız:")
+//     hak -= 1
+//     if (tahmin === rastgele) {
+//         console.log(`tebrikler ${5 - hak} kerede bildiniz`);
+//         break;
+//     } else if (tahmin < rastgele) {
+//         console.log("ARTTIR ⬆")
+//     } else {
+//         console.log("AZALT ⬇");
+//     }
+// } while (hak > 0)
+// if (tahmin !== rastgele) {
+//     console.log("üzgünüz oyunu kaybettiniz 😔😔")
+// }
