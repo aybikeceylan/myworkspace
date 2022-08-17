@@ -18,9 +18,9 @@
 let hak = 5;
 const rastgele = Math.round(Math.random() * 100)
 console.log(rastgele)
-
+let tahmin;
 do {
-    const tahmin = +prompt("lütfen bir tahmin yapınız:")
+    tahmin = +prompt("lütfen bir tahmin yapınız:")
     hak -= 1
     if (tahmin === rastgele) {
         console.log(`tebrikler ${5 - hak} kerede bildiniz`);
@@ -31,5 +31,6 @@ do {
         console.log("AZALT ⬇");
     }
 } while (hak > 0)
-
-console.log("üzgünüz oyunu kaybettiniz 😔😔")
+if (tahmin !== rastgele) {
+    console.log("üzgünüz oyunu kaybettiniz 😔😔")
+}
