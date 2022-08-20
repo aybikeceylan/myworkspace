@@ -1,4 +1,4 @@
-?ORNEK1: Console'dan girilen bir sayisinin pozitif,negatif
+// ?ORNEK1: Console'dan girilen bir sayisinin pozitif,negatif
 //     ? yada 0 oldugunu tespit ederek yazdiriniz.
 
 // const sayı = +prompt(`bir sayı giriniz:`)
@@ -103,4 +103,6 @@
 
 //     let interest = income - expence >= 5000 ? "Kredi Verilebilir 🤑" : "Kredi Verilemez 🥺"
 //     console.log(interest);
+
+// ODEV1: Klavyeden Q veya q karakteri girilene kadar not girişi yapan ve bu karakterlerden birisi girildiğinde O ana kadar girilen tüm notların ortalamasını hesaplayarak konsola ortalamayı bastıran uygulamayı yazınız.
 
