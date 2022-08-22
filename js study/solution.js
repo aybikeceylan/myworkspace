@@ -104,5 +104,27 @@
 //     let interest = income - expence >= 5000 ? "Kredi Verilebilir 🤑" : "Kredi Verilemez 🥺"
 //     console.log(interest);
 
-// ODEV1: Klavyeden Q veya q karakteri girilene kadar not girişi yapan ve bu karakterlerden birisi girildiğinde O ana kadar girilen tüm notların ortalamasını hesaplayarak konsola ortalamayı bastıran uygulamayı yazınız.
+//! ODEV1: Klavyeden Q veya q karakteri girilene kadar not girişi yapan ve bu karakterlerden birisi girildiğinde O ana kadar girilen tüm notların ortalamasını hesaplayarak konsola ortalamayı bastıran uygulamayı yazınız.
+// let not1;
+// let toplam = 0;
+// let sayac = 0;
+// while (true) {
+//     not1 = prompt(`Lutfen bir not girniz yada "Q" "q" ile çıkış yapınız`)
+
+//     if ((Number(not1) > 0) && (Number(not1) <= 100)) {
+//         console.log(not1)
+//         toplam += Number(not1)
+//         sayac += 1
+//         sonuc = toplam / sayac
+
+//     } else if ((not1 == "Q") || (not1 == "q")) {
+//         console.log(`Ortalama Not: ${sonuc}`)
+//         break
+//     } else {
+//         console.log("Geçerli bir karakter giriniz:");
+//     }
+
+// }
+
+//! ODEV2 : Derste yazılan tahmin oyununu tekrar tekrar oynanabilecek hale getiriniz.
 
