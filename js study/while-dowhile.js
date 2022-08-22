@@ -2,13 +2,13 @@
 //? 0-100'den farkli ise Kullaciniyi uyararak yeniden 0-100 arasinda
 //? not girmeye zorlayan kodu while dongusu ile yaziniz.
 
-const not = +prompt("lütfen 0-100 arasında bir not giriniz")
+// const not = +prompt("lütfen 0-100 arasında bir not giriniz")
 
-while (not < 0 || not > 100) {
-    console.log("not 0-100 arasında olmalıdır");
-    not = +prompt("lütfen 0-100 arasında bir not giriniz")
-}
-console.log("girdiğiniz not:", not);
+// while (not < 0 || not > 100) {
+//     console.log("not 0-100 arasında olmalıdır");
+//     not = +prompt("lütfen 0-100 arasında bir not giriniz")
+// }
+// console.log("girdiğiniz not:", not);
 
 
 

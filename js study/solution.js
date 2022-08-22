@@ -127,4 +127,33 @@
 // }
 
 //! ODEV2 : Derste yazılan tahmin oyununu tekrar tekrar oynanabilecek hale getiriniz.
+// let devam;
+// do {
+//     let hak = 5;
+//     const rastgele = Math.round(Math.random() * 100)
+//     console.log(rastgele)
+//     let tahmin;
+//     do {
+//         tahmin = +prompt("lütfen bir tahmin yapınız:")
+//         hak -= 1
+//         if (tahmin === rastgele) {
+//             console.log(`tebrikler ${5 - hak} kerede bildiniz`);
+//             break;
+//         } else if (tahmin < rastgele) {
+//             console.log("ARTTIR ⬆")
+//         } else {
+//             console.log("AZALT ⬇");
+//         }
+//     } while (hak > 0)
+//     if (tahmin !== rastgele) {
+//         console.log("üzgünüz oyunu kaybettiniz 😔😔")
+//     }
+//     let cevap = prompt("Devam etmek ister misiniz E/H")
+//     if (cevap == "E") {
+//         devam = true
+//     } else {
+//         devam = false
+//     }
+
+// } while (devam)
 
