@@ -1,38 +1,9 @@
-body{
-    font-family: 'Open Sans', sans-serif;
-}
-nav.yatay-menu a{
-    text-decoration: none;
-    color: black;
-}
-nav.yatay-menu ul {
-    list-style-type: none;
-    text-align: center;
-}
-nav.yatay-menu ul li{
-    display: inline-block;
-    background-color: wheat;
-    padding: 1rem 2rem;
-    margin-right: 2rem;
-    margin-bottom: 1rem;
-    width: 5rem;
-    border-radius: 10px;
-}
-nav.yatay-menu ul li:hover {
-    background-color: tomato;
-    cursor: pointer;
-}
-nav.yatay-menu ul li:hover a{
-    color: white;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-nav.açılır-menü ul{
-    display: none;
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-nav.açılır-menü .fa-bars:active{
-    opacity: 0.5;
-}
-nav.açılır-menü:hover ul{
-    display: block;
-}
-
