@@ -157,3 +157,21 @@
 
 // } while (devam)
 
+//! ODEV1: tarkan string'indeki kelimelerin sayisini donduren
+//! bir fonksiyon yaziniz.
+
+const tarkan = "Gel gunduzle gece olalim";
+
+const splited = tarkan.split(" ").length;
+console.log(splited);
+
+
+//! ODEV2:
+//! ----------------------------------------------------------
+// https://www.youtube.com/watch?v=b7vfp5G4brE<
+// https://youtu.be/b7vfp5G4brE
+
+const youtube = "https://www.youtube.com/watch?v=b7vfp5G4brE<"
+
+const short = youtube.replace("be.com/watch?v=b7vfp5G4brE", ".be/b7vfp5G4brE")
+console.log(short);

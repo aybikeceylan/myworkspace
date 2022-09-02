@@ -219,4 +219,4 @@ console.log(ramazan.trim().length); //27
 
 //! ODEV2:
 //! ----------------------------------------------------------
-// https://www.youtube.com/watch?v=b7vfp5G4brE
+// https://www.youtube.com/watch?v=b7vfp5G4brE<
