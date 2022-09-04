@@ -160,10 +160,10 @@
 //! ODEV1: tarkan string'indeki kelimelerin sayisini donduren
 //! bir fonksiyon yaziniz.
 
-const tarkan = "Gel gunduzle gece olalim";
+// const tarkan = "Gel gunduzle gece olalim";
 
-const splited = tarkan.split(" ").length;
-console.log(splited);
+// const splited = tarkan.split(" ").length;
+// console.log(splited);
 
 
 //! ODEV2:
@@ -171,7 +171,70 @@ console.log(splited);
 // https://www.youtube.com/watch?v=b7vfp5G4brE<
 // https://youtu.be/b7vfp5G4brE
 
-const youtube = "https://www.youtube.com/watch?v=b7vfp5G4brE<"
+// const youtube = "https://www.youtube.com/watch?v=b7vfp5G4brE<"
 
-const short = youtube.replace("be.com/watch?v=b7vfp5G4brE", ".be/b7vfp5G4brE")
-console.log(short);
+// const short = youtube.replace("be.com/watch?v=b7vfp5G4brE", ".be/b7vfp5G4brE")
+// console.log(short);
+
+//! ödev
+
+//Write a function that takes an array of characters and reverses the letters in place.
+
+//Examples:
+
+//reverse("Clarusway Rocks!") ➞ !skcoR yawsuralC
+
+//reverse("Happy") ➞ yppaH
+
+// const reverseString = function (string) {
+//     string2 = string.split("")
+//     arr1 = string2.reverse()
+//     return lastString = arr1.join("")
+// }
+
+// console.log(reverseString("Clarusway Rocks!"));
+// console.log(reverseString("Happy"));
+
+//! ödev2
+//Purpose of the this coding challenge is to write a code that given a string , returns reverse order of words
+//Input : 'Clarusway' => Output : 'Clarusway'
+
+//Input : 'days. big make things Little' => Output : 'Little things make big days.'
+
+// Please note that, single word should not be reversed!
+
+// const reverseWord = function (word) {
+//     splittedWord = word.split(" ")
+//     arr1 = splittedWord.reverse()
+//     return lastWord = arr1.join(" ")
+// }
+// console.log(reverseWord("Clarusway"));
+// console.log(reverseWord("days. big make things Little"));
+
+//! ödev3
+//Purpose of the this coding challenge is to write a code that given two sorted arrays, returns merged array of these inputs.
+
+//For example:
+//A = [12, 14, 16];
+//B = [11, 13, 17];
+//expectedOutput = [11, 12, 13, 14, 16, 17];
+
+//A = [];
+//B = [11, 13, 17];
+//expectedOutput = [11, 13, 17];
+
+// const mergeArray = (A, B) => {
+//     combinedArr = A.concat(B)
+//     sortedArr = combinedArr.sort((a, b) => a - b)
+//     return sortedArr
+
+// }
+
+// A = [];
+// B = [11, 13, 17];
+
+// console.log(mergeArray(A, B))
+
+// A = [12, 14, 16];
+// B = [11, 13, 17];
+// console.log(mergeArray(A, B))
