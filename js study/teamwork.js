@@ -26,16 +26,16 @@
 
 //*******SORU10  ***********//
 
-// const myCar = {
-//     make: 'ford',
-//     model: 'Mustang',
-//     year: 1965,
-//     color: 'Black'
-// }
+const myCar = {
+    make: 'ford',
+    model: 'Mustang',
+    year: 1965,
+    color: 'Black'
+}
 
-// myCar.age = function (current) {
-//     console.log(current - this.year)
-// }
-// myCar.age(2022)
+myCar.age = function (current) {
+    console.log(current - this.year)
+}
+myCar.age(2022)
 
 //*******SORU11  ***********//
