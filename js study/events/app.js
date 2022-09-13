@@ -1,17 +1,25 @@
+console.log("**** app.js *******");
+
+//? Selectors
 const langInput = document.querySelector(".lang-input");
 const addBtn = document.querySelector("#add-btn");
-const deleteBtn = document.querySelector("#delet-btn")
-const langList = document.getElementById("lang-list")
-
+const deleteBtn = document.querySelector("#delete-btn");
+const langList = document.getElementById("lang-list");
 
 const newUl = document.createElement("ul");
-langList.appendChild(newUl)
+langList.appendChild(newUl);
 
-
-addBtn.addEventListener('click', () => {
+//? addBtn event handler
+addBtn.addEventListener("click", () => {
     if (!langInput.value) {
-        alert("please enter a language")
+        alert("Please enter a language");
     } else {
-        newUl.innerHTML = `<li>${langInput.value}<li>`
+        newUl.innerHTML += `<li>${langInput.value}</li>`;
+        langInput.value = "";
     }
-})
+    langInput.focus();
+});
+
+window.addEventListener("load", () => {
+    langInput.focus();
+});
