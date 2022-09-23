@@ -48,6 +48,6 @@ const myPromise = new Promise((resolve, reject) => {
 })
 
 myPromise
-    .then((res) => console.log(response))
+    .then((response) => console.log(response))
     .catch((err) => console.log(err))
 
