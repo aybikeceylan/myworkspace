@@ -281,23 +281,30 @@
 
 let openers = ['(', '{', '[']
 let closers = [')', '}', ']']
-string = "{ [ ] ( ) }"
+string = "{ [ }"
 newArray = string.split(" ")
+console.log(newArray);
 
 
+for (let j = 0; j < newArray.length; j++) {
+    for (let i = 0; i < openers.length; i++) {
 
-for (let i = 0; i < openers.length; i++) {
-    if (newArray.includes(openers[i]) && newArray.includes(closers[i])) {
+        if ((newArray[0] == openers[i]) && newArray[newArray.length - 1] == closers[i]) {
 
-        //*openers ın ilk elemanını çıkar
-        index = newArray.indexOf(openers[i])
-        newArray.splice(index, 1)
+            newArray.splice(0, 1)
+            console.log(newArray)
 
-        //*closers ın ilk elemanını çıkar
-        index = newArray.indexOf(closers[i])
-        newArray.splice(index, 1)
+            newArray.splice((newArray.length - 1), 1)
+            console.log(newArray)
 
+        } else if ((newArray[0] == openers[i]) && newArray[1] == closers[i]) {
+            newArray.splice(0, 1)
+            console.log(newArray)
 
+            newArray.splice(0, 1)
+            console.log(newArray)
+
+        }
     }
 }
 
