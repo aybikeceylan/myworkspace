@@ -279,37 +279,71 @@
 //! Write an efficient function that tells us whether or not an input string's openers and closers are properly nested.
 
 
-let openers = ['(', '{', '[']
-let closers = [')', '}', ']']
-string = "{ [ }"
-newArray = string.split(" ")
-console.log(newArray);
+// let openers = ['(', '{', '[']
+// let closers = [')', '}', ']']
+// string = "{ [ }"
+// newArray = string.split(" ")
+// console.log(newArray);
 
 
-for (let j = 0; j < newArray.length; j++) {
-    for (let i = 0; i < openers.length; i++) {
+// for (let j = 0; j < newArray.length; j++) {
+//     for (let i = 0; i < openers.length; i++) {
 
-        if ((newArray[0] == openers[i]) && newArray[newArray.length - 1] == closers[i]) {
+//         if ((newArray[0] == openers[i]) && newArray[newArray.length - 1] == closers[i]) {
 
-            newArray.splice(0, 1)
-            console.log(newArray)
+//             newArray.splice(0, 1)
+//             console.log(newArray)
 
-            newArray.splice((newArray.length - 1), 1)
-            console.log(newArray)
+//             newArray.splice((newArray.length - 1), 1)
+//             console.log(newArray)
 
-        } else if ((newArray[0] == openers[i]) && newArray[1] == closers[i]) {
-            newArray.splice(0, 1)
-            console.log(newArray)
+//         } else if ((newArray[0] == openers[i]) && newArray[1] == closers[i]) {
+//             newArray.splice(0, 1)
+//             console.log(newArray)
 
-            newArray.splice(0, 1)
-            console.log(newArray)
+//             newArray.splice(0, 1)
+//             console.log(newArray)
 
-        }
-    }
+//         }
+//     }
+// }
+
+// if (newArray.length > 0) {
+//     console.log("false")
+// } else {
+//     console.log("true");
+// }
+
+
+///* Given an array of integers and a number k, where 1 <= k <= length of the array, compute the maximum values of each subarray of length k.
+
+//!given array = [10, 5, 2, 7, 8, 7] and k = 3, we should get: [10, 7, 8, 8], since:
+//! 10 = max(10, 5, 2)
+//! 7 = max(5, 2, 7)
+//! 8 = max(2, 7, 8)
+//! 8 = max(7, 8, 7)
+
+// Input: nums = [1,3,-1,-3,5,3,6,7], k = 3
+// Output: [3,3,5,5,6,7]
+// Explanation: 
+// Window position                Max
+// ---------------               -----
+// [1  3  -1] -3  5  3  6  7       3
+//  1 [3  -1  -3] 5  3  6  7       3
+//  1  3 [-1  -3  5] 3  6  7       5
+//  1  3  -1 [-3  5  3] 6  7       5
+//  1  3  -1  -3 [5  3  6] 7       6
+//  1  3  -1  -3  5 [3  6  7]      7
+
+nums = [1, 3, -1, -3, 5, 3, 6, 7]
+k = 3
+maxArray = []
+for (let i = 0; i < (nums.length - k + 1); i++) {
+    newNum = nums.slice(i, (i + k))
+    console.log(newNum);
+    maxNum = Math.max(newNum[0], newNum[1], newNum[2])
+    console.log(maxNum)
+    maxArray.push(maxNum)
+    console.log(maxArray);
 }
 
-if (newArray.length > 0) {
-    console.log("false")
-} else {
-    console.log("true");
-}
